@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDF41BB7173F6BD200AC4909 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF41BB6173F6BD200AC4909 /* UIKit.framework */; };
+		DDF41BB9173F6BD200AC4909 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF41BB8173F6BD200AC4909 /* Foundation.framework */; };
+		DDF41BBB173F6BD200AC4909 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF41BBA173F6BD200AC4909 /* CoreGraphics.framework */; };
+		DDF41BC1173F6BD200AC4909 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDF41BBF173F6BD200AC4909 /* InfoPlist.strings */; };
+		DDF41BC3173F6BD200AC4909 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF41BC2173F6BD200AC4909 /* main.m */; };
+		DDF41BC7173F6BD200AC4909 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF41BC6173F6BD200AC4909 /* AppDelegate.m */; };
+		DDF41BC9173F6BD200AC4909 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF41BC8173F6BD200AC4909 /* Default.png */; };
+		DDF41BCB173F6BD200AC4909 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF41BCA173F6BD200AC4909 /* Default@2x.png */; };
+		DDF41BCD173F6BD200AC4909 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF41BCC173F6BD200AC4909 /* Default-568h@2x.png */; };
+		DDF41BFD173F6CFB00AC4909 /* libTOPIOSSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF41BF9173F6CFB00AC4909 /* libTOPIOSSdk.a */; };
+		DDF41BFE173F6CFB00AC4909 /* libTOPIOSSdk.s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF41BFA173F6CFB00AC4909 /* libTOPIOSSdk.s.a */; };
+		DDF41BFF173F6CFB00AC4909 /* barImg.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDF41BFC173F6CFB00AC4909 /* barImg.bundle */; };
+		DDF41C01173F714400AC4909 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF41C00173F714400AC4909 /* SystemConfiguration.framework */; };
+		DDF41C05173F71DA00AC4909 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF41C04173F71DA00AC4909 /* libz.dylib */; };
+		DDF41C17173F723900AC4909 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF41C0B173F723900AC4909 /* NSObject+SBJSON.m */; };
+		DDF41C18173F723900AC4909 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF41C0D173F723900AC4909 /* NSString+SBJSON.m */; };
+		DDF41C19173F723900AC4909 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF41C0F173F723900AC4909 /* SBJSON.m */; };
+		DDF41C1A173F723900AC4909 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF41C11173F723900AC4909 /* SBJsonBase.m */; };
+		DDF41C1B173F723900AC4909 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF41C13173F723900AC4909 /* SBJsonParser.m */; };
+		DDF41C1C173F723900AC4909 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF41C15173F723900AC4909 /* SBJsonWriter.m */; };
+		DDF41C20173F755700AC4909 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF41C1F173F755700AC4909 /* JSONKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DDF41BB3173F6BD200AC4909 /* HotelFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF41BB6173F6BD200AC4909 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DDF41BB8173F6BD200AC4909 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DDF41BBA173F6BD200AC4909 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DDF41BBE173F6BD200AC4909 /* HotelFinder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HotelFinder-Info.plist"; sourceTree = "<group>"; };
+		DDF41BC0173F6BD200AC4909 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDF41BC2173F6BD200AC4909 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDF41BC4173F6BD200AC4909 /* HotelFinder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HotelFinder-Prefix.pch"; sourceTree = "<group>"; };
+		DDF41BC5173F6BD200AC4909 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDF41BC6173F6BD200AC4909 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDF41BC8173F6BD200AC4909 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DDF41BCA173F6BD200AC4909 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DDF41BCC173F6BD200AC4909 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DDF41BD5173F6CFB00AC4909 /* DebuggingTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebuggingTools.h; sourceTree = "<group>"; };
+		DDF41BD6173F6CFB00AC4909 /* JDY_ItemManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_ItemManagement.h; sourceTree = "<group>"; };
+		DDF41BD7173F6CFB00AC4909 /* JDY_MsgCenterManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_MsgCenterManagement.h; sourceTree = "<group>"; };
+		DDF41BD8173F6CFB00AC4909 /* JDY_PlugInEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_PlugInEntry.h; sourceTree = "<group>"; };
+		DDF41BD9173F6CFB00AC4909 /* JDY_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_Protocol.h; sourceTree = "<group>"; };
+		DDF41BDA173F6CFB00AC4909 /* JDY_ProtocolConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_ProtocolConstants.h; sourceTree = "<group>"; };
+		DDF41BDB173F6CFB00AC4909 /* JDY_TradeManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_TradeManagement.h; sourceTree = "<group>"; };
+		DDF41BDC173F6CFB00AC4909 /* JDY_WangWangCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_WangWangCommunication.h; sourceTree = "<group>"; };
+		DDF41BDD173F6CFB00AC4909 /* JDYSharedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDYSharedService.h; sourceTree = "<group>"; };
+		DDF41BDE173F6CFB00AC4909 /* MacrosDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacrosDefine.h; sourceTree = "<group>"; };
+		DDF41BDF173F6CFB00AC4909 /* TopApiResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopApiResponse.h; sourceTree = "<group>"; };
+		DDF41BE0173F6CFB00AC4909 /* TopAppConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppConnector.h; sourceTree = "<group>"; };
+		DDF41BE1173F6CFB00AC4909 /* TopAppEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppEntity.h; sourceTree = "<group>"; };
+		DDF41BE2173F6CFB00AC4909 /* TopAppEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppEvent.h; sourceTree = "<group>"; };
+		DDF41BE3173F6CFB00AC4909 /* TopAppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppService.h; sourceTree = "<group>"; };
+		DDF41BE4173F6CFB00AC4909 /* TopAppSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppSession.h; sourceTree = "<group>"; };
+		DDF41BE5173F6CFB00AC4909 /* TopAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAttachment.h; sourceTree = "<group>"; };
+		DDF41BE6173F6CFB00AC4909 /* TopAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAuth.h; sourceTree = "<group>"; };
+		DDF41BE7173F6CFB00AC4909 /* TopAuthCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAuthCallback.h; sourceTree = "<group>"; };
+		DDF41BE8173F6CFB00AC4909 /* TopAuthWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAuthWebView.h; sourceTree = "<group>"; };
+		DDF41BE9173F6CFB00AC4909 /* TopBridgeWebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBridgeWebview.h; sourceTree = "<group>"; };
+		DDF41BEA173F6CFB00AC4909 /* TopConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopConstants.h; sourceTree = "<group>"; };
+		DDF41BEB173F6CFB00AC4909 /* TopCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCrashHandler.h; sourceTree = "<group>"; };
+		DDF41BEC173F6CFB00AC4909 /* TopEventCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopEventCallback.h; sourceTree = "<group>"; };
+		DDF41BED173F6CFB00AC4909 /* TopIOSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSClient.h; sourceTree = "<group>"; };
+		DDF41BEE173F6CFB00AC4909 /* TopIOSSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSSdk.h; sourceTree = "<group>"; };
+		DDF41BEF173F6CFB00AC4909 /* TopIOSSdkExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSSdkExt.h; sourceTree = "<group>"; };
+		DDF41BF0173F6CFB00AC4909 /* TopIOSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSUtil.h; sourceTree = "<group>"; };
+		DDF41BF1173F6CFB00AC4909 /* TopOpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopOpenUDID.h; sourceTree = "<group>"; };
+		DDF41BF2173F6CFB00AC4909 /* TopPluginServiceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPluginServiceType.h; sourceTree = "<group>"; };
+		DDF41BF3173F6CFB00AC4909 /* TopReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopReachability.h; sourceTree = "<group>"; };
+		DDF41BF4173F6CFB00AC4909 /* TopSDKBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSDKBundle.h; sourceTree = "<group>"; };
+		DDF41BF5173F6CFB00AC4909 /* TopServiceError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopServiceError.h; sourceTree = "<group>"; };
+		DDF41BF6173F6CFB00AC4909 /* TopSimpleCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSimpleCache.h; sourceTree = "<group>"; };
+		DDF41BF7173F6CFB00AC4909 /* TopToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopToolBar.h; sourceTree = "<group>"; };
+		DDF41BF8173F6CFB00AC4909 /* TopTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTracker.h; sourceTree = "<group>"; };
+		DDF41BF9173F6CFB00AC4909 /* libTOPIOSSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTOPIOSSdk.a; sourceTree = "<group>"; };
+		DDF41BFA173F6CFB00AC4909 /* libTOPIOSSdk.s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTOPIOSSdk.s.a; sourceTree = "<group>"; };
+		DDF41BFC173F6CFB00AC4909 /* barImg.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = barImg.bundle; sourceTree = "<group>"; };
+		DDF41C00173F714400AC4909 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DDF41C04173F71DA00AC4909 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DDF41C07173F723900AC4909 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		DDF41C0A173F723900AC4909 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		DDF41C0B173F723900AC4909 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		DDF41C0C173F723900AC4909 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		DDF41C0D173F723900AC4909 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		DDF41C0E173F723900AC4909 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		DDF41C0F173F723900AC4909 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		DDF41C10173F723900AC4909 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		DDF41C11173F723900AC4909 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		DDF41C12173F723900AC4909 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		DDF41C13173F723900AC4909 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		DDF41C14173F723900AC4909 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		DDF41C15173F723900AC4909 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		DDF41C1E173F755700AC4909 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		DDF41C1F173F755700AC4909 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDF41BB0173F6BD200AC4909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF41C05173F71DA00AC4909 /* libz.dylib in Frameworks */,
+				DDF41C01173F714400AC4909 /* SystemConfiguration.framework in Frameworks */,
+				DDF41BB7173F6BD200AC4909 /* UIKit.framework in Frameworks */,
+				DDF41BB9173F6BD200AC4909 /* Foundation.framework in Frameworks */,
+				DDF41BBB173F6BD200AC4909 /* CoreGraphics.framework in Frameworks */,
+				DDF41BFD173F6CFB00AC4909 /* libTOPIOSSdk.a in Frameworks */,
+				DDF41BFE173F6CFB00AC4909 /* libTOPIOSSdk.s.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDF41BAA173F6BD200AC4909 = {
+			isa = PBXGroup;
+			children = (
+				DDF41BBC173F6BD200AC4909 /* HotelFinder */,
+				DDF41BB5173F6BD200AC4909 /* Frameworks */,
+				DDF41BB4173F6BD200AC4909 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDF41BB4173F6BD200AC4909 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDF41BB3173F6BD200AC4909 /* HotelFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDF41BB5173F6BD200AC4909 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDF41C04173F71DA00AC4909 /* libz.dylib */,
+				DDF41C00173F714400AC4909 /* SystemConfiguration.framework */,
+				DDF41BB6173F6BD200AC4909 /* UIKit.framework */,
+				DDF41BB8173F6BD200AC4909 /* Foundation.framework */,
+				DDF41BBA173F6BD200AC4909 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDF41BBC173F6BD200AC4909 /* HotelFinder */ = {
+			isa = PBXGroup;
+			children = (
+				DDF41C06173F723900AC4909 /* JSON */,
+				DDF41BD3173F6CFB00AC4909 /* AliSDK */,
+				DDF41BC5173F6BD200AC4909 /* AppDelegate.h */,
+				DDF41BC6173F6BD200AC4909 /* AppDelegate.m */,
+				DDF41BBD173F6BD200AC4909 /* Supporting Files */,
+			);
+			path = HotelFinder;
+			sourceTree = "<group>";
+		};
+		DDF41BBD173F6BD200AC4909 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDF41BBE173F6BD200AC4909 /* HotelFinder-Info.plist */,
+				DDF41BBF173F6BD200AC4909 /* InfoPlist.strings */,
+				DDF41BC2173F6BD200AC4909 /* main.m */,
+				DDF41BC4173F6BD200AC4909 /* HotelFinder-Prefix.pch */,
+				DDF41BC8173F6BD200AC4909 /* Default.png */,
+				DDF41BCA173F6BD200AC4909 /* Default@2x.png */,
+				DDF41BCC173F6BD200AC4909 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDF41BD3173F6CFB00AC4909 /* AliSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DDF41BD4173F6CFB00AC4909 /* Header */,
+				DDF41BF9173F6CFB00AC4909 /* libTOPIOSSdk.a */,
+				DDF41BFA173F6CFB00AC4909 /* libTOPIOSSdk.s.a */,
+				DDF41BFB173F6CFB00AC4909 /* Resource */,
+			);
+			path = AliSDK;
+			sourceTree = "<group>";
+		};
+		DDF41BD4173F6CFB00AC4909 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				DDF41BD5173F6CFB00AC4909 /* DebuggingTools.h */,
+				DDF41BD6173F6CFB00AC4909 /* JDY_ItemManagement.h */,
+				DDF41BD7173F6CFB00AC4909 /* JDY_MsgCenterManagement.h */,
+				DDF41BD8173F6CFB00AC4909 /* JDY_PlugInEntry.h */,
+				DDF41BD9173F6CFB00AC4909 /* JDY_Protocol.h */,
+				DDF41BDA173F6CFB00AC4909 /* JDY_ProtocolConstants.h */,
+				DDF41BDB173F6CFB00AC4909 /* JDY_TradeManagement.h */,
+				DDF41BDC173F6CFB00AC4909 /* JDY_WangWangCommunication.h */,
+				DDF41BDD173F6CFB00AC4909 /* JDYSharedService.h */,
+				DDF41BDE173F6CFB00AC4909 /* MacrosDefine.h */,
+				DDF41BDF173F6CFB00AC4909 /* TopApiResponse.h */,
+				DDF41BE0173F6CFB00AC4909 /* TopAppConnector.h */,
+				DDF41BE1173F6CFB00AC4909 /* TopAppEntity.h */,
+				DDF41BE2173F6CFB00AC4909 /* TopAppEvent.h */,
+				DDF41BE3173F6CFB00AC4909 /* TopAppService.h */,
+				DDF41BE4173F6CFB00AC4909 /* TopAppSession.h */,
+				DDF41BE5173F6CFB00AC4909 /* TopAttachment.h */,
+				DDF41BE6173F6CFB00AC4909 /* TopAuth.h */,
+				DDF41BE7173F6CFB00AC4909 /* TopAuthCallback.h */,
+				DDF41BE8173F6CFB00AC4909 /* TopAuthWebView.h */,
+				DDF41BE9173F6CFB00AC4909 /* TopBridgeWebview.h */,
+				DDF41BEA173F6CFB00AC4909 /* TopConstants.h */,
+				DDF41BEB173F6CFB00AC4909 /* TopCrashHandler.h */,
+				DDF41BEC173F6CFB00AC4909 /* TopEventCallback.h */,
+				DDF41BED173F6CFB00AC4909 /* TopIOSClient.h */,
+				DDF41BEE173F6CFB00AC4909 /* TopIOSSdk.h */,
+				DDF41BEF173F6CFB00AC4909 /* TopIOSSdkExt.h */,
+				DDF41BF0173F6CFB00AC4909 /* TopIOSUtil.h */,
+				DDF41BF1173F6CFB00AC4909 /* TopOpenUDID.h */,
+				DDF41BF2173F6CFB00AC4909 /* TopPluginServiceType.h */,
+				DDF41BF3173F6CFB00AC4909 /* TopReachability.h */,
+				DDF41BF4173F6CFB00AC4909 /* TopSDKBundle.h */,
+				DDF41BF5173F6CFB00AC4909 /* TopServiceError.h */,
+				DDF41BF6173F6CFB00AC4909 /* TopSimpleCache.h */,
+				DDF41BF7173F6CFB00AC4909 /* TopToolBar.h */,
+				DDF41BF8173F6CFB00AC4909 /* TopTracker.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		DDF41BFB173F6CFB00AC4909 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DDF41BFC173F6CFB00AC4909 /* barImg.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DDF41C06173F723900AC4909 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				DDF41C07173F723900AC4909 /* JSON.h */,
+				DDF41C1E173F755700AC4909 /* JSONKit.h */,
+				DDF41C1F173F755700AC4909 /* JSONKit.m */,
+				DDF41C0A173F723900AC4909 /* NSObject+SBJSON.h */,
+				DDF41C0B173F723900AC4909 /* NSObject+SBJSON.m */,
+				DDF41C0C173F723900AC4909 /* NSString+SBJSON.h */,
+				DDF41C0D173F723900AC4909 /* NSString+SBJSON.m */,
+				DDF41C0E173F723900AC4909 /* SBJSON.h */,
+				DDF41C0F173F723900AC4909 /* SBJSON.m */,
+				DDF41C10173F723900AC4909 /* SBJsonBase.h */,
+				DDF41C11173F723900AC4909 /* SBJsonBase.m */,
+				DDF41C12173F723900AC4909 /* SBJsonParser.h */,
+				DDF41C13173F723900AC4909 /* SBJsonParser.m */,
+				DDF41C14173F723900AC4909 /* SBJsonWriter.h */,
+				DDF41C15173F723900AC4909 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDF41BB2173F6BD200AC4909 /* HotelFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF41BD0173F6BD200AC4909 /* Build configuration list for PBXNativeTarget "HotelFinder" */;
+			buildPhases = (
+				DDF41BAF173F6BD200AC4909 /* Sources */,
+				DDF41BB0173F6BD200AC4909 /* Frameworks */,
+				DDF41BB1173F6BD200AC4909 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotelFinder;
+			productName = HotelFinder;
+			productReference = DDF41BB3173F6BD200AC4909 /* HotelFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDF41BAB173F6BD200AC4909 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Dawn;
+			};
+			buildConfigurationList = DDF41BAE173F6BD200AC4909 /* Build configuration list for PBXProject "HotelFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DDF41BAA173F6BD200AC4909;
+			productRefGroup = DDF41BB4173F6BD200AC4909 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDF41BB2173F6BD200AC4909 /* HotelFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDF41BB1173F6BD200AC4909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF41BC1173F6BD200AC4909 /* InfoPlist.strings in Resources */,
+				DDF41BC9173F6BD200AC4909 /* Default.png in Resources */,
+				DDF41BCB173F6BD200AC4909 /* Default@2x.png in Resources */,
+				DDF41BCD173F6BD200AC4909 /* Default-568h@2x.png in Resources */,
+				DDF41BFF173F6CFB00AC4909 /* barImg.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDF41BAF173F6BD200AC4909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF41BC3173F6BD200AC4909 /* main.m in Sources */,
+				DDF41BC7173F6BD200AC4909 /* AppDelegate.m in Sources */,
+				DDF41C17173F723900AC4909 /* NSObject+SBJSON.m in Sources */,
+				DDF41C18173F723900AC4909 /* NSString+SBJSON.m in Sources */,
+				DDF41C19173F723900AC4909 /* SBJSON.m in Sources */,
+				DDF41C1A173F723900AC4909 /* SBJsonBase.m in Sources */,
+				DDF41C1B173F723900AC4909 /* SBJsonParser.m in Sources */,
+				DDF41C1C173F723900AC4909 /* SBJsonWriter.m in Sources */,
+				DDF41C20173F755700AC4909 /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDF41BBF173F6BD200AC4909 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDF41BC0173F6BD200AC4909 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDF41BCE173F6BD200AC4909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		DDF41BCF173F6BD200AC4909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		DDF41BD1173F6BD200AC4909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HotelFinder/HotelFinder-Prefix.pch";
+				INFOPLIST_FILE = "HotelFinder/HotelFinder-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HotelFinder/AliSDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DDF41BD2173F6BD200AC4909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HotelFinder/HotelFinder-Prefix.pch";
+				INFOPLIST_FILE = "HotelFinder/HotelFinder-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HotelFinder/AliSDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDF41BAE173F6BD200AC4909 /* Build configuration list for PBXProject "HotelFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF41BCE173F6BD200AC4909 /* Debug */,
+				DDF41BCF173F6BD200AC4909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF41BD0173F6BD200AC4909 /* Build configuration list for PBXNativeTarget "HotelFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF41BD1173F6BD200AC4909 /* Debug */,
+				DDF41BD2173F6BD200AC4909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDF41BAB173F6BD200AC4909 /* Project object */;
+}
