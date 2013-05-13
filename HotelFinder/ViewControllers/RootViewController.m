@@ -97,12 +97,11 @@
 - (void) startRequest{
     TopIOSClient *iosClient =[TopIOSClient getIOSClientByAppKey:APP_KEY];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:0];
-    [params setObject:@"taobao.hotels.search" forKey:@"method"];
-    [params setObject:@"true" forKey:@"domestic"];
-    [params setObject:@"110100" forKey:@"city"];
+    [params setObject:@"taobao.itemcats.get" forKey:@"method"];
+    [params setObject:@"fields" forKey:@"cid,parent_cid,name,is_parent"];
+    [params setObject:@"0" forKey:@"parent_cid"];
     
-    
-    [iosClient api:@"GET" params:params target:self cb:@selector(showApiResponse:) userId:@"c半缘君c" needMainThreadCallBack:true];
+    [iosClient api:@"GET" params:params target:self cb:@selector(showApiResponse:) userId:@"" needMainThreadCallBack:true];
 }
 
 
