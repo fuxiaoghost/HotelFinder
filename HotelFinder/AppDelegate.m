@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
 
@@ -23,8 +24,15 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    RootViewController *rootVC = [[RootViewController alloc] init];
+    self.window.rootViewController = rootVC;
+    [rootVC release];
+    
     // 注册应用程序
-    [TopIOSClient registerIOSClient:@"21501339" appSecret:@"df925fc22f81305f7fe458b0c4d17486" callbackUrl:@"appcallback://" needAutoRefreshToken:YES];
+    [TopIOSClient registerIOSClient:APP_KEY
+                          appSecret:APP_SECRET
+                        callbackUrl:APP_CALLBACKURL
+               needAutoRefreshToken:YES];
     
     return YES;
 }

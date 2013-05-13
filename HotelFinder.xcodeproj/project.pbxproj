@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79D3C77B1740A7E900C4F34E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3C77A1740A7E900C4F34E /* RootViewController.m */; };
 		DDF41BB7173F6BD200AC4909 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF41BB6173F6BD200AC4909 /* UIKit.framework */; };
 		DDF41BB9173F6BD200AC4909 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF41BB8173F6BD200AC4909 /* Foundation.framework */; };
 		DDF41BBB173F6BD200AC4909 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF41BBA173F6BD200AC4909 /* CoreGraphics.framework */; };
@@ -31,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79D3C777174085EB00C4F34E /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		79D3C7791740A7E900C4F34E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		79D3C77A1740A7E900C4F34E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		DDF41BB3173F6BD200AC4909 /* HotelFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF41BB6173F6BD200AC4909 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DDF41BB8173F6BD200AC4909 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,6 +124,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79D3C7711740805000C4F34E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79D3C7791740A7E900C4F34E /* RootViewController.h */,
+				79D3C77A1740A7E900C4F34E /* RootViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		DDF41BAA173F6BD200AC4909 = {
 			isa = PBXGroup;
 			children = (
@@ -154,8 +167,10 @@
 			children = (
 				DDF41C06173F723900AC4909 /* JSON */,
 				DDF41BD3173F6CFB00AC4909 /* AliSDK */,
+				79D3C7711740805000C4F34E /* ViewControllers */,
 				DDF41BC5173F6BD200AC4909 /* AppDelegate.h */,
 				DDF41BC6173F6BD200AC4909 /* AppDelegate.m */,
+				79D3C777174085EB00C4F34E /* Config.h */,
 				DDF41BBD173F6BD200AC4909 /* Supporting Files */,
 			);
 			path = HotelFinder;
@@ -334,6 +349,7 @@
 				DDF41C1B173F723900AC4909 /* SBJsonParser.m in Sources */,
 				DDF41C1C173F723900AC4909 /* SBJsonWriter.m in Sources */,
 				DDF41C20173F755700AC4909 /* JSONKit.m in Sources */,
+				79D3C77B1740A7E900C4F34E /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +474,7 @@
 				DDF41BD2173F6BD200AC4909 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
