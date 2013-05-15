@@ -95,13 +95,35 @@
 }
 
 - (void) startRequest{
+    //50011949
+    //{"itemcats_get_response":{"item_cats":{"item_cat":[{"cid":50016161,"is_parent":false,"name":"酒店客栈","parent_cid":50011949},{"cid":50019784,"is_parent":true,"name":"酒店客栈套餐","parent_cid":50011949}]}}}
+    
     TopIOSClient *iosClient =[TopIOSClient getIOSClientByAppKey:APP_KEY];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:0];
-    [params setObject:@"taobao.itemcats.get" forKey:@"method"];
-    [params setObject:@"fields" forKey:@"cid,parent_cid,name,is_parent"];
-    [params setObject:@"0" forKey:@"parent_cid"];
     
-    [iosClient api:@"GET" params:params target:self cb:@selector(showApiResponse:) userId:@"" needMainThreadCallBack:true];
+    /*
+    [params setObject:@"taobao.itemprops.get" forKey:@"method"];
+    [params setObject:@"pid,name,must,multi,prop_values" forKey:@"fields"];
+    [params setObject:@"50016161" forKey:@"cid"];
+    //[params setObject:@"6503015:52847" forKey:@"child_path"];
+    //[params setObject:@"4618707:63595280" forKey:@"child_path"];
+     */
+    
+    
+    [params setObject:@"taobao.taobaoke.items.get" forKey:@"method"];
+    [params setObject:@"num_iid,title,nick,pic_url,price,click_url,commission,commission_rate,commission_num,commission_volume,shop_click_url,seller_credit_score,item_location,volume" forKey:@"fields"];
+    [params setObject:[@"c半缘君c" stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] forKey:@"nick"];
+    [params setObject:@"北京" forKey:@"area"];
+    [params setObject:@"50016161" forKey:@"cid"];
+    [params setObject:@"1" forKey:@"page_no"];
+    [params setObject:@"40" forKey:@"page_size"];
+     
+    
+    //[params setObject:@"taobao.user.buyer.get" forKey:@"method"];
+    //[params setObject:@"user_id,nick,sex,buyer_credit,avatar,has_shop,vip_info" forKey:@"fields"];
+
+
+    [iosClient api:@"GET" params:params target:self cb:@selector(showApiResponse:) userId:@"c半缘君c" needMainThreadCallBack:true];
 }
 
 
